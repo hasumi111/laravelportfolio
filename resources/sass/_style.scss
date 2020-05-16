@@ -1,0 +1,153 @@
+
+.container-fluid{
+  background-color:white;
+}
+
+.brand-btn{
+  width: 100%;
+}
+
+.brand-form{
+  margin: 0 auto;
+}
+
+.search-box .search-btn{
+  margin: 0 5px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-box .submit-btn{
+  margin: 0 5px;
+  border-radius: 5px;
+}
+.search-box .submit-btn:hover{
+  background:#bebdbd7e;
+  color:#4c4c4c;
+}
+
+img.cart{
+  width: 30px;
+}
+
+img.incart{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  object-fit: cover;
+}
+
+img.detail{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  //height: 140px;
+  object-fit: cover;
+}
+
+.item_box{
+
+  color: #4c4c4c;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+  padding-bottom: 15px;
+  font-size: 1.1em;
+  background-color: #bebdbd7e;
+  border-radius: 10px;
+}
+
+.item_box img{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.item_box input{
+
+  width: 100%;/* imgタグとwidth,heightの大きさを揃える */
+  height: 100%;
+  display: block;
+  background-color: #F9C80E;/*background-colorをしっかりと指定しないとinputタグが小さくなってしまいます*/
+  opacity: 0;/*inputタグは見えなくなるようにopacity:0;*/
+  position: absolute;
+  top:0;
+  z-index: 2;/*透明なボタンが画像より手前に来るようにz-indexを指定*/
+  text-align: center;
+
+}
+
+.mycart_box{
+
+  color: #4c4c4c;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+  padding: 24px 8px;
+  font-size: 1.1em;
+  background-color: #fefefe;
+  
+}
+
+.footer_design{
+  background-color: #575c5e;;
+  text-align: center;
+  color: #fefefe;
+  padding: 40px;
+}
+
+.buy-btn{
+  margin: 40px auto 60px;
+  width: 200px;
+  display: block;
+  background-color: #ff5c73;
+}
+
+.ball{
+  position: absolute;
+}
+
+.pagenate{
+  width: 200px;margin: 20px auto;
+}
+
+.button{
+  background:#4c4c4c;
+  color:#fefefe;
+  border:none;
+  position:relative;
+  font-size:1.3em;
+  padding:0 2em;
+  height: 40px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius: 7px;
+}
+.button:hover{
+  background:#bebdbd7e;
+  color:#4c4c4c;
+}
+.button:before,.button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #4c4c4c;
+  transition:400ms ease all;
+}
+.button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.button:hover:before,.button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
